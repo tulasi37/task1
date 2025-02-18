@@ -1,0 +1,88 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #2e3b4e;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    width: 80%;
+}
+
+button {
+    cursor: pointer;
+    background-color: #6c63ff;
+    color: white;
+    width: 85%;
+}
+
+button:hover {
+    background-color: #5a4bff;
+}
+
+#result p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#factorialResult {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#methodUsed {
+    font-style: italic;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: snowfall 5s linear infinite;
+}
+
+.snowflake:nth-child(odd) {
+    animation-duration: 6s;
+    animation-delay: -3s;
+}
+
+.snowflake:nth-child(even) {
+    animation-duration: 7s;
+    animation-delay: -2s;
+}
